@@ -1,0 +1,5 @@
+<footer class="p-2 bg-dark text-white text-right">
+Server status:
+<span *ngIf="wsService.socketStatus"><i class="fas fa-wifi"></i></span>
+<span *ngIf="!wsService.socketStatus"><i class="fas fa-times-circle"></i></span>
+</footer>

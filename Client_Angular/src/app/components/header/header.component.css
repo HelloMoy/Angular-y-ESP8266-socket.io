@@ -1,0 +1,21 @@
+.navbar{
+  position: fixed;
+  width: 100%;
+  left: 0px;
+
+  z-index:1;
+}
+/*
+.nav-side-menu {
+  overflow: auto;
+  font-family: verdana;
+  font-size: 12px;
+  font-weight: 200;
+  background-color: #2e353d;
+  position: fixed;
+  top: 0px;
+  width: 300px;
+  height: 100%;
+  color: #e1ffff;
+  padding: 2px 10px;
+}*/

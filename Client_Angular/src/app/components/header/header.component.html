@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/']" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/tem-hum']">Temperatura y Humedad</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/rgb']">Led RGB</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/push']">Push Button</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/toggle']">Toggle Output</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,37 @@
+<div class="row align-items-center justify-content-center vh-100">
+  <div class="col-sm-auto">
+    <div class="card text-center">
+      <h2 class="p-3 mb-2 bg-dark text-white card-img-top">
+        Toggle 1
+      </h2>
+      <div class="card-body">
+        <label class="switch">
+          <input
+            type="checkbox"
+            [(ngModel)]="toggle1"
+            (ngModelChange)="switch()"
+          />
+          <span class="toggle round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-auto">
+    <div class="card text-center">
+      <h2 class="p-3 mb-2 bg-dark text-white card-img-top">
+        Toggle 2
+      </h2>
+      <div class="card-body">
+        <label class="switch">
+          <input
+            type="checkbox"
+            [(ngModel)]="toggle2"
+            (ngModelChange)="switch()"
+          />
+          <span class="toggle round"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

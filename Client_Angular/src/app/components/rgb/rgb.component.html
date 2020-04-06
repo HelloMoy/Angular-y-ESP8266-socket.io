@@ -1,0 +1,48 @@
+<div class="row align-items-center justify-content-center vh-100">
+  <div class="col-sm-auto">
+    <div class="card text-center">
+      <h2 class="p-3 mb-2 bg-dark text-white card-img-top">
+        <i class="far fa-lightbulb"></i> Control Led RGB
+      </h2>
+      <div class="card-body">
+        <div class="slidecontainer"></div>
+        <input
+          type="range"
+          min="0"
+          max="1023"
+          [(ngModel)]="r"
+          (ngModelChange)="rgb()"
+          (ngModelChange)="rpercent = convercion(r)"
+          class="slider sliderR"
+        />
+        <h3>Red: {{ rpercent | percent }}</h3>
+
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="1023"
+            [(ngModel)]="g"
+            (ngModelChange)="rgb()"
+            (ngModelChange)="gpercent = convercion(g)"
+            class="slider sliderG"
+          />
+          <h3>Green: {{ gpercent | percent }}</h3>
+        </div>
+
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0"
+            max="1023"
+            [(ngModel)]="b"
+            (ngModelChange)="rgb()"
+            (ngModelChange)="bpercent = convercion(b)"
+            class="slider sliderB"
+          />
+          <h3>Blue: {{ bpercent | percent }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

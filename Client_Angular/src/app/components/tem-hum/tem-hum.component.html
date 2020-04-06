@@ -1,0 +1,33 @@
+<div class="row align-items-center justify-content-center vh-100">
+  <div class="col-sm-auto">
+    <div class="card text-center">
+      <h2 class="p-3 mb-2 bg-dark text-white card-img-top">
+        <i class="fas fa-temperature-low"></i> Temperatura
+      </h2>
+      <div class="card-body">
+        <ng-container *ngIf="temperatura; else elseTemplate">
+          <h1>{{ temperatura | number: "1.0" }}°C</h1>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="loader"></div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-auto">
+    <div class="card text-center">
+      <h2 class="p-3 mb-2 bg-dark text-white card-img-top">
+        <i class="fas fa-tint"></i> Humedad
+      </h2>
+      <div class="card-body">
+        <ng-container *ngIf="humedad; else elseTemplate">
+          <h1>{{ humedad | number: "1.0" }}%</h1>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="loader"></div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>
